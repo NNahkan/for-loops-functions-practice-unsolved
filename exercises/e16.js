@@ -6,8 +6,13 @@
 // NOTE: You can NOT use the array.flat() method in your code
 
 export function flatArrays(array) {
-  // Your code goes here...
-
+  const newArr = [];
+  for ( const elm of array) {
+	for (const char of elm) {
+		newArr.push(char)
+	}
+  }
+return newArr
 }
 
 

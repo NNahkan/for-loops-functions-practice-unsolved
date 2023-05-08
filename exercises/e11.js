@@ -5,8 +5,18 @@
 // getAllWithdrawals(bankAccounts) => [3432, 0, 43242.34, 0, 23432]
 
 export function getAllWithdrawals(array) {
-  // Your code goes here...
+  const bankAccounts = [];
 
+  for (const elm of array) {
+    let sum = 0;
+		if (elm.withdrawals) {
+			for (const acc of elm.withdrawals) {
+			sum += acc;
+			}
+		}
+    bankAccounts.push(sum);
+  }
+  return bankAccounts;
 }
 
 // === TEST YOURSELF ===

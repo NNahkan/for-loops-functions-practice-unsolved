@@ -8,8 +8,12 @@
  * Example: getAverage([22, 45, 4, 65]) => 34
  * */
 
-export function getAverage(array) {
-  // Your code goes here...
+export function getAverage(arr) {
+  let sum = 0;
+  for (let elm of arr ) {
+	sum += elm;
+  }
+  return sum/arr.length
 
 }
 
@@ -22,8 +26,17 @@ export function getAverage(array) {
  * */ 
 
 export function getStringSum(str) {
-  // Your code goes here...
+	let sum = 0;
+	const numbers = str.match(/-?\d/g);
+   
+	if (!numbers) return 0
 
+  for ( const elm of numbers) {
+	sum += parseInt(elm);
+  }
+
+  return sum
+  
 }
 
 

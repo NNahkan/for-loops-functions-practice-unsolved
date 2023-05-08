@@ -3,7 +3,12 @@
 // getNumbersWithSquareRoots(17) => [0, 1, 4, 9, 16]
 
 export function getNumbersWithSquareRoots(max) {
-  // Your code goes here...
+	const arr = [];
+  for ( let i = 0; i < Math.sqrt(max) ; i ++) {
+	arr.push(i ** 2)
+  }
+
+  return arr;
 
 }
 

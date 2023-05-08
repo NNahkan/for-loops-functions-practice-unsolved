@@ -2,11 +2,16 @@
 // EXERCISE 1
 // Return an array of numbers in 1..10
 // getFirstTenNumbers() => [1, 2, 3, ... , 10]
-
+ 
 export function getFirstTenNumbers() {
-  // Your code goes here...
-
-}
+	// return [...Array(11).keys()].slice(1)
+	const arr = [];
+	for ( let i = 1 ; i <11; i++) {
+		arr.push(i)
+	}
+	return arr;
+ }
+ 
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"

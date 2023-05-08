@@ -5,8 +5,16 @@
 // NOTE: You can NOT use the array.concat() method in your code
 
 export function concatArrays(arr1, arr2) {
-  // Your code goes here...
+	// return [...arr1,...arr2]
+	const newArr = [];
 
+	for ( const elm of arr1) {
+		newArr.push(elm);
+	}
+	for ( const elm of arr2) {
+		newArr.push(elm);
+	}
+	return newArr
 }
 
 
